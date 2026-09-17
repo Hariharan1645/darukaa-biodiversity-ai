@@ -2,8 +2,8 @@
 ## Darukaa.Earth Hackathon — AI Biodiversity Intelligence Chatbot
 
 **Version:** 1.0
-**Author:** [Your Name]
-**Purpose of this document:** Defines what to build, why, and how, so that both a human developer and an AI coding assistant (e.g. Antigravity, Cursor, Claude Code) can implement this project with minimal ambiguity.
+**Author:** Hariharan Malwad
+**Purpose of this document:** Defines what to build, why, and how, so that both a human developer and an AI coding assistant can implement this project with minimal ambiguity.
 
 ---
 
@@ -309,24 +309,3 @@ Response:
 - [ ] Live demo URL is reachable (if deployed).
 
 ---
-
-## 14. Submission Checklist (per Darukaa's guidelines)
-
-- [ ] One Word (.docx) document submitted via the applied-job page.
-- [ ] GitHub repository link included.
-- [ ] If repo is private, access granted to:
-  - ankita.dasgupta@darukaa.com
-  - harsh.kumar@darukaa.com
-  - utkarsh.gauniyal@darukaa.com
-  - guneet.mutreja@darukaa.com
-- [ ] Live demo URL included (if applicable).
-- [ ] README.md covers: architecture, database/schema, local setup, CI/CD.
-- [ ] Any additional credentials/notes needed to run the project.
-
----
-
-## 15. Risks & Open Questions
-
-- **Time constraint (72 hrs):** Full fine-tuning or exhaustive dataset curation is not feasible — scope the knowledge base to 5–10 high-quality documents rather than breadth.
-- **API costs:** If using OpenAI embeddings/LLM, monitor usage; open-source alternatives (bge-small-en, local Llama models) are a fallback if budget is a concern.
-- **Citation accuracy:** Only cite sources actually present in the ingested knowledge base — never let the LLM fabricate a citation. Consider a validation step that checks the citation field against known source titles before returning a response.
