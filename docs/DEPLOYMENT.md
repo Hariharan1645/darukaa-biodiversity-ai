@@ -9,7 +9,7 @@ This document provides exact, project-specific, step-by-step instructions for de
 - **Database**: Supabase PostgreSQL (Free Tier) with `pgvector` extension (384-dimensional vector embeddings).
 - **Backend & API**: FastAPI running on Render Web Service (Free Tier Docker Container).
 - **Frontend UI**: Nature-Tech Glassmorphism Web App (`app/static/`) mounted directly by FastAPI on root (`/`).
-- **LLM Engine**: Groq API using `openai/gpt-oss-120b`.
+- **LLM Engine**: Groq API using `llama-3.3-70b-versatile`.
 - **Embedding Model**: Local `BAAI/bge-small-en-v1.5` (384-dim open-source embeddings).
 
 ---
@@ -130,7 +130,7 @@ In Render's **Environment** tab, add the following environment variables:
 | Environment Variable | Description / Value |
 |---|---|
 | `GROQ_API_KEY` | `<your_groq_api_key>` (Your active Groq API Key) |
-| `GROQ_MODEL_NAME` | `openai/gpt-oss-120b` (Default instruction model) |
+| `GROQ_MODEL_NAME` | `llama-3.3-70b-versatile` (Default instruction model) |
 | `DATABASE_URL` | `postgresql://postgres.[PROJECT_REF]:[YOUR_PASSWORD]@aws-0-[REGION].pooler.supabase.com:5432/postgres` |
 | `EMBEDDING_MODEL_NAME` | `BAAI/bge-small-en-v1.5` |
 | `EMBEDDING_DIMENSION` | `384` |
@@ -163,7 +163,7 @@ curl https://<your-render-app>.onrender.com/health
 ```json
 {
   "status": "healthy",
-  "groq_model": "openai/gpt-oss-120b",
+  "groq_model": "llama-3.3-70b-versatile",
   "embedding_model": "BAAI/bge-small-en-v1.5"
 }
 ```
