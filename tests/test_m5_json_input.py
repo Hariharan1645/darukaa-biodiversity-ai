@@ -28,7 +28,12 @@ def test_chat_json_endpoint():
     }
     
     print(f"\n[Sending POST /chat/json Payload]: {payload}")
-    resp = client.post("/chat/json", json=payload)
+    try:
+        resp = client.post("/chat/json", json=payload)
+    except Exception as e:
+        if "429" in str(e) or "rate_limit" in str(e).lower():
+            pytest.skip(f"Groq API rate limit reached (429): {e}")
+        raise
     
     assert resp.status_code == 200, f"Expected status 200, got {resp.status_code}"
     data = resp.json()

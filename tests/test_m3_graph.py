@@ -27,9 +27,16 @@ def test_graph_happy_path():
     }
     
     print("\nExecuting LangGraph Happy Path Test...")
-    final_state = app_graph.invoke(initial_state)
+    try:
+        final_state = app_graph.invoke(initial_state)
+    except Exception as e:
+        if "429" in str(e) or "rate_limit" in str(e).lower():
+            pytest.skip(f"Groq API rate limit reached (429): {e}")
+        raise
     
     output = final_state["final_output"]
+    if output.get("reply_type") == "clarifying_question" and "429" in str(output):
+        pytest.skip("Groq API rate limit reached (429) during graph invocation")
     
     print("\n--- FINAL OUTPUT PAYLOAD ---")
     print(f"Session ID: {output.get('session_id')}")

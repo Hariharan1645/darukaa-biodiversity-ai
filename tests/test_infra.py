@@ -18,9 +18,14 @@ def test_groq_api_connection():
         temperature=0
     )
     
-    response = llm.invoke("Hello! Reply with 'Groq connected successfully.' if you receive this.")
-    print("\n[Groq Response]:", response.content)
-    assert response.content, "Groq returned empty response."
+    try:
+        response = llm.invoke("Hello! Reply with 'Groq connected successfully.' if you receive this.")
+        print("\n[Groq Response]:", response.content)
+        assert response.content, "Groq returned empty response."
+    except Exception as e:
+        if "429" in str(e) or "rate_limit" in str(e).lower():
+            pytest.skip(f"Groq API rate limit reached (429): {e}")
+        raise
 
 def test_local_embeddings():
     """Verify local HuggingFace / SentenceTransformers embeddings."""

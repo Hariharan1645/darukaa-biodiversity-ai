@@ -51,7 +51,12 @@ def test_multi_turn_conversation_flow():
         "session_id": session_id,
         "message": "Soil organic carbon is 0.3%, rainfall is low, and I grow monoculture wheat in a semi-arid region."
     }
-    resp2 = client.post("/chat", json=req2)
+    try:
+        resp2 = client.post("/chat", json=req2)
+    except Exception as e:
+        if "429" in str(e) or "rate_limit" in str(e).lower():
+            pytest.skip(f"Groq API rate limit reached (429): {e}")
+        raise
     
     assert resp2.status_code == 200, f"Turn 2 status code {resp2.status_code}"
     data2 = resp2.json()
@@ -64,6 +69,9 @@ def test_multi_turn_conversation_flow():
     print(f"Reply Type Turn 2: {reply_type2}")
     print(f"Accumulated Metrics Turn 2: {metrics2}")
     print(f"Recommendations Count: {len(recs2) if recs2 else 0}")
+    
+    if reply_type2 == "clarifying_question" and ("429" in str(data2) or "Rate limit" in str(data2)):
+        pytest.skip("Groq API rate limit reached (429) during conversation turn 2")
     
     assert data2["session_id"] == session_id, "Session ID changed across turns"
     assert reply_type2 == "recommendation", f"Expected 'recommendation', got {reply_type2}"
