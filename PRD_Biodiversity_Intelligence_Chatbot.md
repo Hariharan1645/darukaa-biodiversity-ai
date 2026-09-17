@@ -2,8 +2,8 @@
 ## Darukaa.Earth Hackathon — AI Biodiversity Intelligence Chatbot
 
 **Version:** 1.0
-**Author:** [Your Name]
-**Purpose of this document:** Defines what to build, why, and how, so that both a human developer and an AI coding assistant (e.g. Antigravity, Cursor, Claude Code) can implement this project with minimal ambiguity.
+**Author:** Hariharan Malwad
+**Purpose of this document:** Defines what to build, why, and how, so that both a human developer and an AI coding assistant can implement this project with minimal ambiguity.
 
 ---
 
