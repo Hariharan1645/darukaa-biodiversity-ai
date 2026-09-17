@@ -1,0 +1,40 @@
+name: Darukaa Biodiversity AI CI Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.13"
+
+    - name: Install dependencies
+      run: |
+        python -m pip upgrade pip
+        pip install -r requirements.txt
+        pip install pypdf pytest
+
+    - name: Run Test Suite
+      env:
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        GROQ_MODEL_NAME: groq/compound
+        EMBEDDING_MODEL_NAME: BAAI/bge-small-en-v1.5
+      run: |
+        python tests/test_infra.py
+        python tests/test_m2_ingestion.py
+        python tests/test_m2_5_expansion.py
+        python tests/test_m3_graph.py
+        python tests/test_m4_conversation.py
+        python tests/test_m5_json_input.py
+        python tests/test_m6_output_enforcement.py

@@ -1,8 +1,27 @@
+# Environment & Secrets
 .env
+*.env
+
+# Build Prompts & Dev Scratch Files
+Antigravity_Build_Prompt.md
+scratch/
+
+# Python & Runtime Caches
 __pycache__/
 *.pyc
 .pytest_cache/
 venv/
 .venv/
+
+# Data & Source Files (Keep structure via .gitkeep)
 data/sources/*
 !data/sources/.gitkeep
+data/knowledge_cache.json
+data/skipped_chunks.json
+
+# IDE & OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
