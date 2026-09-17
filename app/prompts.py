@@ -45,7 +45,7 @@ Retrieved Evidence Chunks:
 Extracted Metrics & Regional Context:
 {extracted_metrics_json}
 
-Provide a rigorous scientific analysis (2-3 paragraphs) explaining how these environmental variables interact and cause the observed environmental degradation. Highlight causal pathways supported by the scientific evidence.
+Provide a rigorous scientific analysis (2-3 well-structured paragraphs separated by clear double newlines) explaining how these environmental variables interact and cause the observed environmental degradation. Use bold titles (e.g., **Multi-Variable Causal Dynamics**) at the start of paragraphs to highlight causal pathways supported by scientific evidence.
 """
 
 RECOMMENDATION_PROMPT = """You are an expert AI Environmental Scientist.

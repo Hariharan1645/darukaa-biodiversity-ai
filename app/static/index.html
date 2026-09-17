@@ -3,167 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darukaa.Earth — AI Biodiversity Intelligence Scientist</title>
+    <title>Darukaa.Earth — AI Biodiversity & Ecological Intelligence</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="background-globes">
-        <div class="globe globe-1"></div>
-        <div class="globe globe-2"></div>
-    </div>
-
-    <div class="app-container">
-        <!-- Header -->
+    <div class="app-wrapper">
+        <!-- Main Top Bar Header -->
         <header class="app-header">
-            <div class="logo-area">
-                <div class="logo-icon">🌿</div>
+            <div class="brand-area">
+                <div class="brand-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.4 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                </div>
                 <div>
-                    <h1 class="logo-title">Darukaa.Earth</h1>
-                    <p class="logo-subtitle">AI Biodiversity & Ecological Intelligence Scientist</p>
+                    <div class="brand-eyebrow">BUILT ON SCIENCE • DESIGNED FOR DECISIONS</div>
+                    <h1 class="brand-title">Darukaa.Earth</h1>
                 </div>
             </div>
-            <div class="header-badge">
-                <span class="status-dot"></span>
-                <span id="sessionBadgeText">Session Active</span>
+            <div class="header-status">
+                <span class="status-indicator"></span>
+                <span id="sessionBadgeText" class="status-text">SYSTEM READY</span>
             </div>
         </header>
 
-        <!-- Intro Banner -->
+        <!-- Science Intro Banner -->
         <div class="intro-banner">
-            <p><strong>Science-Backed Ecological Intelligence:</strong> Describe your land conditions or enter environmental metrics. Our RAG-powered AI reasons across soil health, climate, water, land use, and biodiversity variables to generate multi-metric, cited restoration recommendations.</p>
+            <div class="intro-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="16" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12.01" y2="8"/>
+                </svg>
+            </div>
+            <div class="intro-content">
+                <strong>Science-Backed Ecological Intelligence Platform:</strong> Reason across soil organic carbon, moisture dynamics, microclimate, and biodiversity metrics to generate multi-metric, cited restoration interventions backed by 16 global environmental reports.
+            </div>
         </div>
 
-        <!-- Mode Switcher Tabs -->
-        <div class="mode-tabs">
+        <!-- Mode Navigation Tabs -->
+        <nav class="mode-tabs">
             <button class="tab-btn active" id="tabChat" onclick="switchMode('chat')">
-                <span class="tab-icon">💬</span> Natural Language Chat Mode (/chat)
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                <span>Natural Language Chat</span>
+                <code class="tab-code">/chat</code>
             </button>
             <button class="tab-btn" id="tabJson" onclick="switchMode('json')">
-                <span class="tab-icon">📊</span> Structured Metrics Mode (/chat/json)
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="3" y1="9" x2="21" y2="9"/>
+                    <line x1="9" y1="21" x2="9" y2="9"/>
+                </svg>
+                <span>Structured Metrics Direct</span>
+                <code class="tab-code">/chat/json</code>
             </button>
-        </div>
+        </nav>
 
-        <!-- Main Workspace -->
-        <main class="workspace">
-            <!-- Left Side: Chat Feed (Visible in Chat Mode) -->
-            <section class="chat-section" id="chatSection">
-                <div class="chat-feed" id="chatFeed">
-                    <!-- Initial Welcome Message -->
-                    <div class="chat-bubble assistant">
-                        <div class="bubble-header">
-                            <span class="bubble-avatar">🌱</span>
-                            <span class="bubble-sender">AI Environmental Scientist</span>
+        <!-- Main Content Area -->
+        <div class="main-layout">
+            <!-- Primary Workspace -->
+            <main class="primary-workspace">
+                <!-- Chat Interface -->
+                <section class="chat-section" id="chatSection">
+                    <div class="chat-feed" id="chatFeed">
+                        <!-- Welcome Message -->
+                        <div class="chat-bubble assistant">
+                            <div class="bubble-header">
+                                <div class="avatar assistant-avatar">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                </div>
+                                <span class="bubble-sender">AI Environmental Scientist</span>
+                            </div>
+                            <div class="bubble-body">
+                                Welcome to <strong>Darukaa.Earth Ecological Intelligence</strong>. Share your land parameters (such as soil organic carbon %, annual rainfall, crop system, or degradation indicators), and our RAG graph engine will synthesize cited, multi-metric restoration strategies.
+                            </div>
                         </div>
-                        <div class="bubble-body">
-                            Welcome to <strong>Darukaa Biodiversity Intelligence</strong>. Please share details about your land (e.g. soil condition, crop type, rainfall pattern, or environmental degradation), and I will analyze ecological mechanisms to generate cited interventions.
+                    </div>
+
+                    <!-- Input Form -->
+                    <form class="chat-input-form" id="chatForm" onsubmit="handleChatSubmit(event)">
+                        <input type="text" id="chatInput" placeholder="Describe your land conditions (e.g. Soil organic carbon is 0.3%, low rainfall, monoculture wheat)..." autocomplete="off" required>
+                        <button type="submit" id="sendBtn" class="btn btn-secondary">
+                            <span>Execute Query</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </button>
+                    </form>
+                </section>
+
+                <!-- Direct JSON Form -->
+                <section class="form-section hidden" id="formSection">
+                    <div class="form-card">
+                        <div class="form-header">
+                            <h2 class="form-title">Direct Structured Metrics Ingestion</h2>
+                            <p class="form-subtitle">Directly populate environmental variables to bypass natural language extraction and initiate graph reasoning.</p>
                         </div>
+
+                        <form id="jsonForm" onsubmit="handleJsonSubmit(event)">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="inputSoc">Soil Organic Carbon (%)</label>
+                                    <input type="text" id="inputSoc" placeholder="e.g. 0.3%">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputRainfall">Annual Rainfall</label>
+                                    <input type="text" id="inputRainfall" placeholder="e.g. low (400mm)">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputLandUse">Land Use / Cropping System</label>
+                                    <input type="text" id="inputLandUse" placeholder="e.g. monoculture wheat">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputRegion">Region / Biome Type</label>
+                                    <select id="inputRegion">
+                                        <option value="">Auto-Detect / Unspecified</option>
+                                        <option value="semi-arid">Semi-Arid</option>
+                                        <option value="tropical">Tropical</option>
+                                        <option value="urban">Urban</option>
+                                        <option value="temperate">Temperate</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPh">Soil pH</label>
+                                    <input type="text" id="inputPh" placeholder="e.g. 6.5">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputMoisture">Soil Moisture</label>
+                                    <input type="text" id="inputMoisture" placeholder="e.g. dry (10%)">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputLat">Latitude Coordinate</label>
+                                    <input type="number" step="any" id="inputLat" placeholder="e.g. 26.9124">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputLon">Longitude Coordinate</label>
+                                    <input type="number" step="any" id="inputLon" placeholder="e.g. 75.7873">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="inputBiodiversity">Biodiversity Indicators</label>
+                                    <input type="text" id="inputBiodiversity" placeholder="e.g. declining beneficial insects & soil microflora">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="inputHumanImpact">Human Disturbances / Pressures</label>
+                                    <input type="text" id="inputHumanImpact" placeholder="e.g. intensive tillage, chemical runoff">
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-primary" onclick="fillSampleData()">Fill Sample Scenario</button>
+                                <button type="submit" class="btn btn-secondary">
+                                    <span>Run Graph Inference</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                        <polyline points="12 5 19 12 12 19"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Sidebar Panel: State & Vector Retrieval Trace -->
+            <aside class="sidebar-panel">
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                        <h3 class="panel-title">Active Metrics State</h3>
+                    </div>
+                    <div class="metrics-tags" id="metricsTags">
+                        <span class="empty-state">No metrics extracted yet.</span>
                     </div>
                 </div>
 
-                <!-- Chat Input Form -->
-                <form class="chat-input-area" id="chatForm" onsubmit="handleChatSubmit(event)">
-                    <input type="text" id="chatInput" placeholder="Describe your land conditions (e.g., Soil organic carbon is 0.3%, low rainfall, monoculture wheat)..." autocomplete="off" required>
-                    <button type="submit" id="sendBtn" class="primary-btn">
-                        <span>Send Query</span>
-                        <span class="btn-arrow">→</span>
-                    </button>
-                </form>
-            </section>
-
-            <!-- Structured Metrics Form (Visible in JSON Mode) -->
-            <section class="form-section hidden" id="formSection">
-                <div class="form-card">
-                    <h2 class="form-title">Enter Environmental Metrics Directly</h2>
-                    <p class="form-desc">Provide known metrics to bypass text extraction and trigger direct RAG multi-metric reasoning.</p>
-                    
-                    <form id="jsonForm" onsubmit="handleJsonSubmit(event)">
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="inputSoc">Soil Organic Carbon (%)</label>
-                                <input type="text" id="inputSoc" placeholder="e.g. 0.3% or low">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputRainfall">Annual Rainfall</label>
-                                <input type="text" id="inputRainfall" placeholder="e.g. low (400mm)">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputLandUse">Land Use / Crop Type</label>
-                                <input type="text" id="inputLandUse" placeholder="e.g. monoculture wheat">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputRegion">Region / Biome Type</label>
-                                <select id="inputRegion">
-                                    <option value="">Auto-Detect / Any</option>
-                                    <option value="semi-arid">Semi-Arid</option>
-                                    <option value="tropical">Tropical</option>
-                                    <option value="urban">Urban</option>
-                                    <option value="temperate">Temperate</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputPh">Soil pH (Optional)</label>
-                                <input type="text" id="inputPh" placeholder="e.g. 6.5">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputMoisture">Soil Moisture (Optional)</label>
-                                <input type="text" id="inputMoisture" placeholder="e.g. dry / 10%">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputLat">Latitude (Optional Geo)</label>
-                                <input type="number" step="any" id="inputLat" placeholder="e.g. 6.9271">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputLon">Longitude (Optional Geo)</label>
-                                <input type="number" step="any" id="inputLon" placeholder="e.g. 79.8612">
-                            </div>
-                            <div class="form-group full-width">
-                                <label for="inputBiodiversity">Biodiversity Indicators</label>
-                                <input type="text" id="inputBiodiversity" placeholder="e.g. declining pollinators & bird species richness">
-                            </div>
-                            <div class="form-group full-width">
-                                <label for="inputHumanImpact">Human Impact / Disturbances</label>
-                                <input type="text" id="inputHumanImpact" placeholder="e.g. high pesticide use, soil compaction">
-                            </div>
-                        </div>
-
-                        <div class="form-actions">
-                            <button type="button" class="secondary-btn" onclick="fillSampleData()">Fill Sample Metrics</button>
-                            <button type="submit" class="primary-btn">
-                                <span>Execute RAG Analysis</span>
-                                <span class="btn-arrow">→</span>
-                            </button>
-                        </div>
-                    </form>
+                <div class="panel-card">
+                    <div class="panel-header">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                        <h3 class="panel-title">Vector Search Retrieval Trace</h3>
+                    </div>
+                    <div class="trace-feed" id="traceFeed">
+                        <span class="empty-state">Retrieved vector chunks will appear here after query execution.</span>
+                    </div>
                 </div>
-            </section>
-        </main>
-
-        <!-- Right Side Panel: State & Vector Retrieval Tracing -->
-        <aside class="panel-section">
-            <div class="panel-card">
-                <h3 class="panel-title">Active Metrics State</h3>
-                <div class="metrics-tags" id="metricsTags">
-                    <span class="empty-state-text">No metrics extracted yet.</span>
-                </div>
-            </div>
-
-            <div class="panel-card">
-                <h3 class="panel-title">Vector Search Retrieval Trace</h3>
-                <div class="trace-feed" id="traceFeed">
-                    <span class="empty-state-text">Retrieved knowledge chunks will appear here upon submission.</span>
-                </div>
-            </div>
-        </aside>
+            </aside>
+        </div>
     </div>
 
-    <!-- Loading Overlay Spinner -->
+    <!-- Loading Overlay -->
     <div class="loading-overlay hidden" id="loadingOverlay">
-        <div class="spinner-box">
-            <div class="spinner"></div>
-            <p class="loading-text">Executing Multi-Metric RAG Reasoning & Vector Verification...</p>
+        <div class="loading-card">
+            <div class="loading-spinner"></div>
+            <div class="loading-title">Executing Multi-Metric RAG Reasoning</div>
+            <div class="loading-desc">Retrieving vector embeddings & verifying scientific citations against 16 global environmental reports...</div>
         </div>
     </div>
 

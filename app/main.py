@@ -145,7 +145,9 @@ def chat_json_endpoint(request: JsonChatRequest):
         retrieval_trace=final_payload.get("retrieval_trace")
     )
 
-# Mount static frontend directory to serve on root /
+# Mount static frontend directory to serve on /static and root /
 static_dir = os.path.join(os.path.dirname(__file__), "static")
 if os.path.exists(static_dir):
-    app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
+    app.mount("/static", StaticFiles(directory=static_dir), name="static_assets")
+    app.mount("/", StaticFiles(directory=static_dir, html=True), name="static_root")
+
