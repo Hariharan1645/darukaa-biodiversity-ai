@@ -5,8 +5,10 @@ import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+from app.config import settings
 from app.graph import app_graph
 
+@pytest.mark.skipif(not settings.GROQ_API_KEY, reason="GROQ_API_KEY environment variable is not set")
 def test_graph_happy_path():
     """Verify end-to-end happy path execution of LangGraph state machine with complete metrics."""
     session_id = str(uuid.uuid4())

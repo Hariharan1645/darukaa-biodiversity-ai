@@ -6,6 +6,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 from app.config import settings
 
+@pytest.mark.skipif(not settings.GROQ_API_KEY, reason="GROQ_API_KEY environment variable is not set")
 def test_groq_api_connection():
     """Verify Groq API key and model connectivity using langchain-groq."""
     from langchain_groq import ChatGroq

@@ -1,0 +1,14 @@
+Title: FAO Guidelines on Soil Organic Carbon Management and Restoration
+Source: Food and Agriculture Organization (FAO) - Technical Manual on Soil Organic Carbon Management
+URL: https://www.fao.org/documents/card/en/c/cb6394en/
+Category: soil
+
+Section 1: Soil Health and Soil Organic Carbon Dynamics
+Soil organic carbon (SOC) is the primary indicator of soil quality, microbial activity, and structure. In semi-arid agricultural landscapes, SOC depletion below 0.5% severely impairs water retention, nutrient cycling, and microbial biodiversity. Monoculture cropping without residue return accelerates SOC mineralization through frequent tillage and bare soil exposure.
+
+Section 2: Recommended Interventions & Multi-Metric Mechanisms
+1. Cover Cropping with Legumes and Grasses:
+Introducing legume-based cover crops (e.g., Vicia villosa, Medicago sativa) during fallow periods increases soil nitrogen fixation and adds high-quality plant biomass. Mechanism: Nitrogen fixation fuels microbial decomposition, accelerating soil organic matter turnover and forming stable humus fractions. Expected improvement: 15% to 25% increase in soil organic carbon over 2 to 3 years, while improving soil moisture retention by 12-18%. Time horizon: Medium term. Primary metrics impacted: soil_organic_carbon, soil_moisture, species_richness. Citation: FAO Technical Manual on Soil Organic Carbon Management (2020), Vol 3, pp. 45-52.
+
+2. Conservation Tillage and Crop Residue Retention:
+Transitioning from conventional moldboard plowing to zero-tillage or minimum tillage with >30% crop residue cover mitigates soil erosion and temperature fluctuations. Mechanism: Undisturbed fungal hyphae networks stabilize macroaggregates, protecting SOC from oxidative loss and enhancing earthworm (Lumbricidae) population density. Expected improvement: SOC accumulation of 0.3-0.6 tonnes C/ha/year, reducing erosion rates by up to 60%. Time horizon: Medium term. Primary metrics impacted: soil_organic_carbon, human_impact, biodiversity_indicators. Citation: FAO Recoil Assessment on Global Conservation Agriculture (2021).

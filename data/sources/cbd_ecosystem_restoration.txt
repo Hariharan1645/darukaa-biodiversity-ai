@@ -1,0 +1,14 @@
+Title: CBD Kunming-Montreal Global Biodiversity Framework Target Implementation Guidelines
+Source: Convention on Biological Diversity (CBD)
+URL: https://www.cbd.int/gbf/
+Category: land_use
+
+Section 1: Ecosystem Restoration in Managed Landscapes
+Target 2 and Target 10 of the Kunming-Montreal Framework emphasize restoring degraded terrestrial ecosystems and adopting biodiversity-friendly agricultural management to improve ecosystem resilience and soil function.
+
+Section 2: Multi-Metric Restoration Frameworks
+1. Crop Rotation Diversification & Polyculture Systems:
+Replacing continuous monoculture (e.g. monoculture wheat or corn) with a 4-year crop rotation including legumes, brassicas, and deep-rooted taproot crops. Mechanism: Diversified root architecture breaks pest cycles, improves soil structural macro-porosity, and root exudates feed diverse bacterial and fungal consortia. Expected improvement: 20-30% improvement in soil organic carbon, 45% reduction in synthetic fertilizer requirements, and marked increases in soil microbial biomass. Time horizon: Medium term (2-4 years). Primary metrics impacted: land_use, soil_organic_carbon, human_impact. Citation: CBD Technical Series No. 93: Sustainable Agriculture and Ecological Restoration (2022).
+
+2. Integrated Pest and Nutrient Management (IPNM):
+Substituting synthetic chemical inputs with organic compost, bio-fertilizers, and biological control agents. Mechanism: Preserves non-target mycorrhizal fungi and beneficial soil invertebrates damaged by synthetic inputs. Expected improvement: 50% decrease in chemical pesticide runoff, restoring soil bio-activity. Time horizon: Short term. Primary metrics impacted: human_impact, soil_ph, species_richness. Citation: CBD Global Biodiversity Outlook 5 (GBO-5).

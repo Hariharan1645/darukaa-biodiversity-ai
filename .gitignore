@@ -13,8 +13,9 @@ __pycache__/
 venv/
 .venv/
 
-# Data & Source Files (Keep structure via .gitkeep)
-data/sources/*
+# Data & Source Files (Ignore large PDFs, keep text samples and .gitkeep)
+data/sources/*.pdf
+!data/sources/*.txt
 !data/sources/.gitkeep
 data/knowledge_cache.json
 data/skipped_chunks.json

@@ -5,10 +5,12 @@ from fastapi.testclient import TestClient
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+from app.config import settings
 from app.main import app
 
 client = TestClient(app)
 
+@pytest.mark.skipif(not settings.GROQ_API_KEY, reason="GROQ_API_KEY environment variable is not set")
 def test_chat_json_endpoint():
     """Verify POST /chat/json endpoint with complete structured metrics payload."""
     print("=" * 60)

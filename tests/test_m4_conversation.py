@@ -5,11 +5,13 @@ from fastapi.testclient import TestClient
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+from app.config import settings
 from app.main import app
 from app.memory import load_session_state
 
 client = TestClient(app)
 
+@pytest.mark.skipif(not settings.GROQ_API_KEY, reason="GROQ_API_KEY environment variable is not set")
 def test_multi_turn_conversation_flow():
     """Verify multi-turn session memory, metric accumulation, and clarifying question routing."""
     print("=" * 60)

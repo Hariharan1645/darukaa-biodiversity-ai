@@ -1,0 +1,14 @@
+Title: IPCC Special Report on Climate Change, Desertification, and Land Degradation
+Source: Intergovernmental Panel on Climate Change (IPCC) - SRCCL Chapter 4 & 6
+URL: https://www.ipcc.ch/srccl/
+Category: climate
+
+Section 1: Climate Interactions with Soil and Land Degradation
+Semi-arid regions facing low or erratic rainfall are highly vulnerable to thermal stress and evaporative water loss. Land degradation reduces surface albedo and evapotranspiration capacity, exacerbating regional heating and microclimate aridification.
+
+Section 2: Multi-Variable Climate Interventions & Restoration Mechanisms
+1. Agroforestry and Tree-Crop Integration (Silvopasture / Alley Cropping):
+Planting native nitrogen-fixing trees (e.g., Acacia albida, Faidherbia albida) integrated into annual cropland or pasture systems creates canopy shade and windbreaks. Mechanism: Tree roots access deep groundwater tables, recycling nutrients to topsoil via leaf litter drop while reducing ground surface temperature by 3-5°C and canopy wind speed by 40%. Expected improvement: Microclimate temperature stabilization, 20-30% reduction in evapotranspiration, and 25-40% increase in avian and pollinator species richness over 3-5 years. Time horizon: Medium to long term. Primary metrics impacted: climate_factors, rainfall_retention, soil_moisture, species_richness. Citation: IPCC Special Report on Climate Change and Land (SRCCL), Chapter 4: Land Degradation, pp. 345-380.
+
+2. Water Harvesting Earthworks (Swales and Contour Bunds):
+Constructing keyline contour bunds and swales across agricultural slopes captures rainfall runoff. Mechanism: Slowing runoff increases groundwater recharge and soil moisture infiltration depth from 15cm to over 60cm, preventing topsoil washing. Expected improvement: 30-50% increased water infiltration during heavy rainfall events, reducing crop water stress during drought intervals. Time horizon: Short term. Primary metrics impacted: soil_moisture, human_impact, climate_resilience. Citation: IPCC SRCCL Chapter 6: Interlinkages between Desertification, Degradation and Mitigation.

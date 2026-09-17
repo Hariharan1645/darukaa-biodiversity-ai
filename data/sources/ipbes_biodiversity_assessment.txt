@@ -1,0 +1,14 @@
+Title: IPBES Global Assessment Report on Biodiversity and Ecosystem Services
+Source: Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)
+URL: https://www.ipbes.net/global-assessment
+Category: biodiversity
+
+Section 1: Drivers of Agricultural Biodiversity Loss
+Monoculture farming, pesticide applications, and severe habitat fragmentation are the primary drivers of pollinator decline and beneficial insect population collapse. Simplified agricultural landscapes lose natural ecological control mechanisms, increasing pest vulnerability.
+
+Section 2: Evidence-Backed Biodiversity Interventions
+1. Native Wildflower Strips and Pollinator Habitats:
+Establishing perennial native wildflower strips (e.g., Asteraceae, Fabaceae) along field margins and irrigation corridors. Mechanism: Continuous nectar and pollen availability throughout growing seasons supports wild bee species (Bombus spp., solitary bees) and predatory insects (syrphid flies, ladybeetles). Expected improvement: 40-70% increase in pollinator abundance and 30% reduction in agricultural crop pest outbreaks without synthetic chemical pesticides. Time horizon: Short term (1-2 years). Primary metrics impacted: species_richness, biodiversity_indicators, human_impact. Citation: IPBES Global Assessment Report on Biodiversity and Ecosystem Services (2019), Chapter 2.2: Status and Trends of Drivers.
+
+2. Habitat Corridors and Hedgerow Connectivity:
+Connecting isolated woodland remnants with multi-strata native hedgerows. Mechanism: Hedgerows serve as ecological corridors for small mammals, birds, and insects while providing wind shelter and reducing field-edge erosion. Expected improvement: 35-50% increase in landscape connectivity index and species richness. Time horizon: Medium term. Primary metrics impacted: species_richness, land_use, human_impact. Citation: IPBES Assessment on Pollinators, Pollination and Food Production (2016).

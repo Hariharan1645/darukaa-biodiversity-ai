@@ -1,0 +1,14 @@
+Title: UNEP Global Environment Outlook — Mitigation of Human Impact on Soil and Water Ecosystems
+Source: United Nations Environment Programme (UNEP) - GEO-6 Report
+URL: https://www.unep.org/resources/global-environment-outlook-6
+Category: human_impact
+
+Section 1: Human Disturbances and Environmental Degradation Pathways
+Agricultural expansion, excessive tillage, agrochemical contamination, and deforestation cause severe topsoil loss, groundwater pollution, and habitat fragmentation across temperate and semi-arid biomes.
+
+Section 2: Targeted Ecological Interventions
+1. Riparian Buffer Zone Establishment:
+Planting multi-tiered native vegetation (trees, shrubs, native grasses) along stream banks and drainage channels bordering agricultural fields. Mechanism: Vegetation slows surface runoff, filtering up to 85% of agricultural sediment, nitrate, and pesticide residues before reaching surface water bodies, while lowering water temperatures via shading. Expected improvement: 70-85% reduction in nutrient runoff into streams, 30-50% increase in aquatic macroinvertebrate diversity. Time horizon: Medium term (2-3 years). Primary metrics impacted: human_impact, water_quality, species_richness. Citation: UNEP GEO-6 Technical Report: Freshwater and Terrestrial Ecosystem Protection (2019), pp. 210-235.
+
+2. Biochar Soil Amendment for Degraded Soils:
+Incorporating pyrolyzed woody biomass (biochar) into degraded, low-carbon topsoils. Mechanism: Biochar's high porous surface area increases cation exchange capacity (CEC) and creates long-term recalcitrant carbon storage resistent to microbial degradation. Expected improvement: Permanent SOC enhancement (+1 to +3 tonnes C/ha), 15-25% increase in soil moisture retention capacity. Time horizon: Long term. Primary metrics impacted: soil_organic_carbon, soil_moisture, human_impact. Citation: UNEP Frontiers Report: Emerging Environmental Issues (2020).
